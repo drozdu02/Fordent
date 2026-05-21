@@ -20,6 +20,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "pl_PL",
@@ -27,6 +36,14 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: `${SITE_NAME} — ${SITE_TAGLINE} | Wrocław`,
     description: DEFAULT_DESCRIPTION,
+    images: [
+      {
+        url: "/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: SITE_NAME,
+      },
+    ],
   },
 };
 
