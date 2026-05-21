@@ -1,8 +1,8 @@
 export const categoryColors = {
-  korony: "bg-amber-100 text-amber-800",
-  mosty: "bg-sky-100 text-sky-800",
-  protezy: "bg-green-100 text-green-800",
-  licowki: "bg-purple-100 text-purple-800",
-  implanty: "bg-rose-100 text-rose-800",
-  inne: "bg-gray-100 text-gray-800"
+  korony: "bg-[var(--fd-accent-pale)] text-[var(--fd-navy)]",
+  mosty: "bg-[var(--fd-accent-pale)] text-[var(--fd-accent)]",
+  protezy: "bg-[var(--fd-surface-tint)] text-[var(--fd-text)]",
+  licowki: "bg-[var(--fd-accent-pale)] text-[var(--fd-navy)]",
+  implanty: "bg-[var(--fd-accent-pale)] text-[var(--fd-accent)]",
+  inne: "bg-[var(--fd-surface)] text-[var(--fd-text-muted)]",
 };

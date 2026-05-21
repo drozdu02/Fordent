@@ -6,36 +6,39 @@ type ContactDetail = {
   lines: string[];
   color: string;
   iconColor: string;
-}
-
+};
 
 export const contactDetails: ContactDetail[] = [
   {
     icon: MapPin,
     title: "Adres",
-    lines: ["ul. Dentystyczna 15", "00-001 Warszawa"],
-    color: "bg-sky-100",
-    iconColor: "text-[#0EA5E9]"
+    lines: ["ul. Damrota 38A", "Wrocław"],
+    color: "bg-white/10",
+    iconColor: "text-[var(--fd-accent-light)]",
   },
   {
     icon: Phone,
     title: "Telefon",
-    lines: ["+48 123 456 789", "+48 987 654 321"],
-    color: "bg-green-100",
-    iconColor: "text-green-600"
+    lines: ["+48 607 575 990"],
+    color: "bg-white/10",
+    iconColor: "text-[var(--fd-accent-light)]",
   },
   {
     icon: Mail,
     title: "Email",
-    lines: ["kontakt@fordent.pl", "zamowienia@fordent.pl"],
-    color: "bg-purple-100",
-    iconColor: "text-purple-600"
+    lines: ["pracowniafordent@gmail.com"],
+    color: "bg-white/10",
+    iconColor: "text-[var(--fd-accent-light)]",
   },
   {
     icon: Clock,
     title: "Godziny pracy",
-    lines: ["Pon-Pt: 8:00 - 18:00", "Sob: 9:00 - 14:00"],
-    color: "bg-amber-100",
-    iconColor: "text-amber-600"
-  }
+    lines: [
+      "Poniedziałek – Piątek: 8:00 – 16:00",
+      "Sobota: 9:00 – 13:00",
+      "Niedziela: zamknięte",
+    ],
+    color: "bg-white/10",
+    iconColor: "text-[var(--fd-accent-light)]",
+  },
 ];
