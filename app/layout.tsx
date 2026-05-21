@@ -8,6 +8,8 @@ import {
   SITE_URL,
 } from "@/app/lib/constants/site";
 import { RootLayoutProps } from "@/app/lib/interfaces/root-interface";
+import JsonLd from "@/app/components/seo/json-ld";
+import { buildSiteJsonLd } from "@/app/lib/seo/json-ld";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -45,12 +47,19 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary",
+    title: `${SITE_NAME} — ${SITE_TAGLINE} | Wrocław`,
+    description: DEFAULT_DESCRIPTION,
+    images: ["/android-chrome-512x512.png"],
+  },
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pl">
       <body className="min-h-screen bg-white">
+        <JsonLd data={buildSiteJsonLd()} />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

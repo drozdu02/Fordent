@@ -18,6 +18,8 @@ export function createPageMetadata({
 }: PageMetadataOptions): Metadata {
   const canonical = `${SITE_URL}${path}`;
 
+  const ogTitle = `${title} | ${SITE_NAME}`;
+
   return {
     title,
     description,
@@ -25,12 +27,26 @@ export function createPageMetadata({
       canonical,
     },
     openGraph: {
-      title: `${title} | ${SITE_NAME}`,
+      title: ogTitle,
       description,
       url: canonical,
       siteName: SITE_NAME,
       locale: "pl_PL",
       type: "website",
+      images: [
+        {
+          url: "/android-chrome-512x512.png",
+          width: 512,
+          height: 512,
+          alt: SITE_NAME,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: ogTitle,
+      description,
+      images: ["/android-chrome-512x512.png"],
     },
   };
 }
