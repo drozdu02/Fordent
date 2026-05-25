@@ -19,7 +19,7 @@ export default function HeroSection() {
             transition={{ duration: 0.65, ease: "easeOut" }}
           >
             <h1 className="mb-6">
-              Precyzja protetyki
+              Protetyka
               <span className="mt-3 block bg-gradient-to-r from-[var(--fd-accent)] to-[var(--fd-navy-mid)] bg-clip-text text-transparent">
                 w każdym detalu
               </span>
@@ -60,19 +60,6 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--fd-navy)]/15 via-transparent to-transparent" />
             </div>
 
-            <div className="absolute -bottom-5 -left-3 card-fd hidden p-4 sm:block lg:-left-8">
-              <p className="text-2xl font-bold text-[var(--fd-navy)]">CAD/CAM</p>
-              <p className="text-xs font-medium text-muted-fd">
-                Cyfrowa precyzja
-              </p>
-            </div>
-
-            <div className="absolute -right-3 top-8 card-fd hidden p-4 sm:block lg:-right-8">
-              <p className="text-sm font-semibold text-[var(--fd-navy)]">
-                Gwarancja jakości
-              </p>
-              <p className="text-xs text-muted-fd">Certyfikowane materiały</p>
-            </div>
           </motion.div>
         </div>
       </div>

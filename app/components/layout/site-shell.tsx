@@ -83,7 +83,7 @@ export default function SiteShell({ children }: RootLayoutProps) {
       <main>{children}</main>
 
       <footer className="bg-[var(--fd-navy)] text-white">
-        <div className="container-fd py-16 md:py-20">
+        <div className="container-fd pt-16 pb-10 md:pt-20 md:pb-12">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-16">
             <div>
               <p className="mb-1 text-2xl font-bold tracking-tight">FORDENT</p>

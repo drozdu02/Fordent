@@ -17,11 +17,6 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    id: "implanty",
-    title: "Implanty",
-    items: ["Korona na implancie", "Most na implantach"],
-  },
-  {
     id: "wklady-naklady",
     title: "Wkłady i nakłady",
     items: ["Wkład koronowo-korzeniowy", "Onlay (druk 3D)"],
@@ -52,7 +47,7 @@ export const serviceCategories: ServiceCategory[] = [
     items: [
       "Onlaye CAD/CAM",
       "Modele diagnostyczne 3D",
-      "Prace z cyfrowego skanu (bez odcisku)",
+      "Prace z cyfrowego skanu (bez wycisku)",
     ],
   },
 ];

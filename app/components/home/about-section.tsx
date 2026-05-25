@@ -84,17 +84,11 @@ export default function AboutSection() {
             <h2 className="mt-3 mb-6">Pasja i precyzja w każdej pracy</h2>
 
             <p className="mb-6 text-lg leading-relaxed text-muted-fd">
-              FORDENT to nowoczesna pracownia techniki dentystycznej, która łączy
-              tradycyjne rzemiosło z najnowszymi technologiami. Tworzymy
-              uzupełnienia protetyczne o perfekcyjnym dopasowaniu i naturalnym
-              wyglądzie.
+              FORDENT to pracownia techniki dentystycznej z ponad 20-letnim
+              doświadczeniem. Przez lata wypracowaliśmy standardy, które łączą
+              precyzję wykonania z najnowszymi technologiami protetycznymi —
+              dla gabinetów stomatologicznych stawiających na jakość.
             </p>
-            <p className="mb-10 leading-relaxed text-muted-fd">
-              Nasz zespół doświadczonych techników nieustannie doskonali
-              umiejętności na szkoleniach i konferencjach. Współpracujemy z
-              uznanymi producentami materiałów dentystycznych.
-            </p>
-
             <div className="grid gap-3 sm:grid-cols-2">
               {features.map((feature, index) => (
                 <motion.div
@@ -103,10 +97,18 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
-                  className="flex items-start gap-3 rounded-xl border border-[var(--fd-border-light)] bg-white p-4 shadow-sm"
+                  className={`flex gap-3 rounded-xl border border-[var(--fd-border-light)] bg-white p-4 shadow-sm ${
+                    feature === "Technologia CAD/CAM"
+                      ? "items-center"
+                      : "items-start"
+                  }`}
                 >
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--fd-accent)]" />
-                  <span className="text-sm font-medium leading-snug text-[var(--fd-text)]">
+                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[var(--fd-accent)]" />
+                  <span
+                    className={`text-sm font-medium leading-snug text-[var(--fd-text)] ${
+                      feature === "Technologia CAD/CAM" ? "" : "pt-0.5"
+                    }`}
+                  >
                     {feature}
                   </span>
                 </motion.div>

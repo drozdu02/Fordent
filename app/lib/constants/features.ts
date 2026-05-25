@@ -1,6 +1,6 @@
 export const features = [
-  "Certyfikowane materiały najwyższej jakości",
-  "Nowoczesna technologia CAD/CAM",
+  "Materiały najwyższej jakości",
+  "Technologia CAD/CAM",
   "Indywidualne podejście do każdego zlecenia",
   "Terminowa realizacja zamówień",
   "Wieloletnie doświadczenie w branży",
